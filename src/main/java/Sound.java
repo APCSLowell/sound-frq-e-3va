@@ -22,8 +22,8 @@ public class Sound
           samples[i] = limit;
           count++;
         }
-        else if (samples[i] < -limit; {
-          samples[i] == -limit;
+        else if (samples[i] < -limit) {
+          samples[i] = -limit;
           count++;
         }
     }
@@ -44,7 +44,7 @@ public class Sound
     while(samples[count] == 0) {
       count++;
     }
-    int[] newSamples = [samples.length() - count];
+    int[] newSamples = new int[samples.length() - count];
     for (int i = 0; i < newSamples.length(); i++) {
       newSamples[i] = samples[i + count];
     } samples = newSamples;
