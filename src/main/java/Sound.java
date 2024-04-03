@@ -44,7 +44,7 @@ public class Sound
     while(this.samples[j] == 0) {
       j++;
     }
-    int[] newSamples = new int[this.samples.length - count];
+    int[] newSamples = new int[this.samples.length - j];
     for (int i = 0; i < newSamples.length; i++) {
       newSamples[i] = samples[i + j];
     } 
